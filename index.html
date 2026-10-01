@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Estructura con Columnas</title>
+    <style>
+        /* RECUADRO DEL TITULO */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 20px;
+        }
+
+        .logo-pequeno {
+            width: 50px;
+            height: auto;
+            display: block;
+        }
+
+        .logo-cabecera {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .barra-navegacion{
+            display: flex;
+            gap:15px;
+            /* ANCHO */
+            margin-top: 10px;
+        }
+
+        /* BOTONES */
+        .boton-nav{
+            text-decoration: none;
+            color:beige;
+            /* COLOR */
+            background-color: #3976a5;
+            /* LARGO, ANCHO */
+            padding: 6px 17px;
+            border-radius: 4px;
+            /* QUE TAN GRANDE */
+            font-size: 14px;
+            font-family: sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        /* AL PASAR EL MAUSE CAMBIA DE COLOR */
+        .boton-nav:hover {
+            background-color:#041e93;
+            color: #d6cbcb;
+        }
+
+        /* al seleccionarlo cambia de color */
+         .boton-nav.activo {
+            background-color:#2f5a7b;
+            color:#ffffff;
+            font-weight: bold;
+        }
+    
+        /* espacio entre lo recuadros */
+        main {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* que tan grande el recuadro de la izquierda y que tan largo */
+        aside {
+            width: 20%;
+            background-color: #9dbdff;
+            padding: 25px;
+        }
+
+        /* lo mismo de arriba */
+        section {
+            width: 70%;
+            background-color: #dfc4ff;
+            padding: 10px;
+        }
+        body {
+            background-color:#ffffff;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="margin: 0; color:#000000;" >Mi Sitio Web</h1>
+            <nav style="color:#ffffff;">Menú de navegación</nav>
+            <nav class ="barra-navegacion">
+                <a href="index.html" class="boton-nav activo">Inicio</a>
+                <a href="semantica2.html" class="boton-nav">Otro1</a>
+                <a href="semantica3.html" class="boton-nav">Otro2</a>
+            </nav>
+        </div>
+        <img src="imagenes/mono.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera" width="200" height="100">
+    </header>
+    <main>
+        <aside style="text-align: center;">
+            <h3>Amper</h3>
+            <p>prueba el nuevo amper y AMPERISATE</p>
+            <img src="imagenes/amper.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera" width="200" style="display: block; margin: 0 auto;">
+        </aside>
+        <section>
+            <article style="text-align: center;">
+        <img src="imagenes/chestnut.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera" width="200" style="display: block; margin: 0 auto;">
+                <h2>CHESTNUT</h2>
+                <p>dos hermanas huérfanas que son adoptadas y se mudan a un apartamento en Nueva York. En secreto, adoptan a un cachorro de Gran Danés llamado Chestnut. El conflicto principal surge porque en su nuevo hogar están prohibidas las mascotas, por lo que deben esconderlo mientras el perro crece a un tamaño gigante y, al mismo tiempo, las ayuda a salvar el día de unos ladrones.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p style="color:#ffffff;">Pie de página</p>
+    </footer>
+</body>
+</html>
